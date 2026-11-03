@@ -1,21 +1,7 @@
 {
-  "name": "dmego-home-page",
-  "version": "1.0.5",
-  "description": "Dmego Home Page",
-  "scripts": {
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dmego/home.github.io.git"
-  },
-  "keywords": [
-    "Dmego",
-    "HomePage"
-  ],
-  "author": "Dmego",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dmego/home.github.io/issues"
-  },
-  "homepage": "https://github.com/dmego/home.github.io#readme"
+  "name": "yutong-zhang-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Yutong Zhang's bilingual academic homepage",
+  "homepage": "https://yutong-cloud.github.io/"
 }

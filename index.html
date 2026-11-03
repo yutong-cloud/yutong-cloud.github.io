@@ -1,128 +1,97 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
 <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content=" Home 四熹丸子">
-    <meta name="keywords" content="四熹丸子,Homepage">
-    <meta name="author" content="四熹丸子">
-    <title>四熹丸子 Home</title>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/onlinewebfonts.css"/>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/vno.css">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/iconfont.css">
-    <link rel="apple-touch-icon" href="https://unpkg.com/dmego-home-page@latest/apple-touch-icon.png">
-    <link rel="icon" href="https://unpkg.com/dmego-home-page@latest/favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="张语桐，东北财经大学金融科技本科生。关注大语言模型评测、可信人工智能，以及 AI 与金融科技的交叉应用。">
+  <meta name="theme-color" content="#f7f8f5">
+  <meta property="og:title" content="张语桐 · Yutong Zhang">
+  <meta property="og:description" content="Exploring trustworthy AI, language models, and financial technology.">
+  <meta property="og:type" content="website">
+  <title>张语桐 · Yutong Zhang</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="profile.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
-
 <body>
-    <span class="mobile btn-mobile-menu">
-        <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
-        <i class="social iconfont icon-angleup btn-mobile-close__icon hidden"></i>
-    </span>
-    <header id="panel" class="panel-cover">
-        <div class="panel-main">
-            <div class="panel-main__inner panel-inverted">
-                <div class="panel-main__content">
-                    <div class="ih-item circle effect right_to_left">            
-                        <a href="#" title="" class="blog-button">
-                            <div class="img"><img src="https://unpkg.com/dmego-home-page@latest/assets/img/logo3.jpg" alt="img" class="js-avatar iUp profilepic"></div>
-                            <div class="info iUp">
-                                <div class="info-back">
-                                    <h2> 
-                                        
-                                            Be Brave
-                                        
-                                    </h2>
-                                    <p>
-                                        
-                                            2025 · 勇敢
-                                        
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <h1 class="panel-cover__title panel-title iUp">
-                        <a href="#" title="四熹丸子 Home">四熹丸子</a>
-                    </h1>
-                    <p class="panel-cover__subtitle panel-subtitle iUp">Code Create Life</p>
-                    <hr class="panel-cover__divider iUp" />
-                    <p id="description" class="panel-cover__description iUp">如何得与凉风约, 不共尘沙一并来!
-                        <br/>
-                        <strong>-「中牟道中」</strong>
-                    </p>
-                    <div class="navigation-wrapper iUp">
-                        <div>
-                            <nav class="cover-navigation cover-navigation--primary">
-                                <ul class="navigation">
-                                    <li class="navigation__item">
-                                        <a href="/" class="blog-button">首页</a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="https://dmego.cn" class="blog-button" target="_blank">博客</a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="https://r.dmego.cn" class="blog-button" target="_blank">简历</a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="https://dmego.cn/about/" class="blog-button" target="_blank">关于</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="iUp">
-                            <nav class="cover-navigation navigation--social">
-                                <ul class="navigation">
-                                    <li class="navigation__item">
-                                        <a href="https://github.com/dmego/" title="github" target="_blank">
-                                            <i class='social iconfont icon-github'></i>
-                                            <span class="label">github</span>
-                                        </a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="http://www.cnblogs.com/dmego/" title="cnblogs" target="_blank">
-                                            <i class='social iconfont icon-cnblogs'></i>
-                                            <span class="label">cnblogs</span>
-                                        </a>
-                                    </li>
+  <a class="skip-link" href="#main" data-i18n="skip">跳至主要内容</a>
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="#about" aria-label="Yutong Zhang home"><span class="brand-mark">yz<span>·</span></span><span>Yutong Zhang<span class="brand-dot">.</span></span></a>
+      <nav class="navigation" id="navigation" aria-label="主要导航">
+        <a href="#about" class="active" data-i18n="navAbout">关于</a>
+        <a href="#research" data-i18n="navResearch">研究与项目</a>
+        <a href="#education" data-i18n="navEducation">经历</a>
+        <a href="#awards" data-i18n="navAwards">荣誉</a>
+      </nav>
+      <div class="header-actions">
+        <button class="language-button" id="language-toggle" aria-label="Switch to English">EN <span>↗</span></button>
+        <span class="action-divider"></span>
+        <button class="icon-button" id="theme-toggle" aria-label="切换深色模式"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 13.1A8.8 8.8 0 0 1 10.9 3.2 9 9 0 1 0 20.8 13.1Z"/></svg></button>
+        <button class="icon-button menu-toggle" id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="展开导航"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+  </header>
 
-                                    <li class="navigation__item">
-                                        <a href="https://www.zhihu.com/people/dmego/" title="zhihu" target="_blank">
-                                            <i class='social iconfont icon-zhihu'></i>
-                                            <span class="label">zhihu</span>
-                                        </a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <!-- 加密的邮箱地址, 请自行修改, 或者改用下方的明文方式 -->
-                                        <a href="javascript:decryptEmail('ZG1lYWdvQGdtYWlsLmNvbQ==');" title="email">
-                                        <!-- <a href="test@test.com" title="email"> -->
-                                            <i class='social iconfont icon-email'></i>
-                                            <span class="label">email</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel-cover--overlay cover-slate"></div>
+  <div class="page-shell">
+    <aside class="profile-sidebar" aria-label="个人信息">
+      <div class="portrait-wrap"><img class="portrait" src="assets/portrait.jpg" alt="张语桐的个人照片" width="390" height="557"><span class="portrait-corner" aria-hidden="true">✳</span></div>
+      <h1 class="profile-name">张语桐</h1>
+      <p class="profile-english">Yutong Zhang</p>
+      <div class="profile-rule"></div>
+      <p class="profile-role" data-i18n="role">金融科技 · 本科生</p>
+      <p class="profile-university" data-i18n="university">东北财经大学</p>
+      <p class="profile-location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span data-i18n="location">中国 · 大连</span></p>
+      <div class="social-links">
+        <a href="mailto:3074583963@qq.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>Email</span><span class="external-arrow">↗</span></a>
+        <a href="https://github.com/yutong-cloud" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 20c-4 1-4-2-6-2m12 4v-3.8c0-1.1-.4-1.8-1-2.2 3.6-.4 7-1.8 7-6A4.8 4.8 0 0 0 18.7 6c.2-1 .1-2-.3-3-1.1 0-2.6.8-3.5 1.4a13 13 0 0 0-6 0C8 3.8 6.5 3 5.4 3 5 4 4.9 5 5.1 6A4.8 4.8 0 0 0 3.8 10c0 4.2 3.4 5.6 7 6-.6.4-1 1.1-1 2.2V22"/></svg><span>GitHub</span><span class="external-arrow">↗</span></a>
+        <a href="assets/yutong-zhang-cv.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg><span data-i18n="cv">个人简历</span><span class="external-arrow">↗</span></a>
+      </div>
+      <div class="sidebar-note"><span class="tiny-star">✦</span><p data-i18n="sidebarNote">保持好奇，<br>让每一个问题走得更远。</p></div>
+      <a class="sidebar-contact" href="#contact"><span class="status-dot"></span><span data-i18n="sidebarContact">欢迎交流与合作</span></a>
+    </aside>
+
+    <main id="main">
+      <section class="intro section-anchor" id="about" aria-labelledby="intro-title">
+        <div class="eyebrow"><span class="eyebrow-line"></span><span>HELLO, WORLD</span><span class="issue">PERSONAL HOMEPAGE / 2026</span></div>
+        <div class="intro-grid">
+          <div class="intro-copy">
+            <p class="hello" data-i18n="hello">你好，我是语桐 <span class="wave" aria-hidden="true">✳</span></p>
+            <h2 id="intro-title" data-i18n="heroTitle">理解模型，<br><em>连接真实世界。</em></h2>
+            <p class="hero-english" data-i18n="heroSubtitle">Curiosity at the intersection of AI & finance.</p>
+          </div>
+          <div class="compass-visual" aria-label="研究方向：大语言模型、可信人工智能、金融科技">
+            <svg viewBox="0 0 300 276" role="img" aria-labelledby="compass-title"><title id="compass-title">AI 与金融科技的交叉探索</title><defs><pattern id="dot-grid" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="currentColor" opacity=".22"/></pattern></defs><rect width="300" height="276" fill="url(#dot-grid)"/><circle class="compass-orbit" cx="151" cy="137" r="88"/><circle class="compass-orbit inner" cx="151" cy="137" r="59"/><path class="compass-axis" d="M36 137h230M151 22v230M91 67l121 140M86 201 218 71"/><path class="compass-connector" d="m151 137-60-70m60 70 67-66m-67 66 61 70"/><circle class="compass-center-halo" cx="151" cy="137" r="37"/><circle class="compass-center" cx="151" cy="137" r="25"/><text class="compass-ai" x="151" y="143" text-anchor="middle">AI</text><circle class="compass-node" cx="91" cy="67" r="7"/><circle class="compass-node mint" cx="218" cy="71" r="7"/><circle class="compass-node amber" cx="212" cy="207" r="7"/><g class="compass-label"><text x="26" y="47">LANGUAGE</text><text x="26" y="60">MODELS</text><text x="223" y="48">TRUST</text><text x="223" y="61">& SAFETY</text><text x="162" y="239">FINANCIAL</text><text x="162" y="252">TECHNOLOGY</text></g><path class="compass-spark" d="M48 205v16m-8-8h16M259 124v10m-5-5h10"/><text class="compass-caption" x="31" y="263">01 — CONNECTING THE DOTS</text></svg>
+          </div>
         </div>
-        <!-- <div class="beian iUp">
-            <a class="icp" href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">XXX</a>
-            <a class="gwab" href="http://www.beian.gov.cn/portal/recordQuery" target="_blank">XXX</a>
-        </div> -->
-        <div class="remark iUp">
-            <p class="power">Powered By 
-                <a href="https://github.com/features/actions" target="_blank"> GitHub Actions </a> And 
-                <a href="https://hitokoto.cn/" target="_blank"> Hitokoto </a>
-            </p>
-        </div>
-    </header>
-    <script type="text/javascript" src="https://unpkg.com/dmego-home-page@latest/assets/js/main.js"></script>
-    <script type="text/javascript" src="./assets/json/images.json?cb=getBingImages"></script>
+        <div class="bio" data-i18n="bio"><p>我目前就读于<strong>东北财经大学金融科技专业</strong>，研究兴趣聚焦于<strong>大语言模型评测与可信人工智能</strong>，以及人工智能在金融场景中的应用。</p><p>从模型幻觉诊断、多轮对话行为，到 ESG 文本分析与银行舆情智能体，我希望用扎实的实验和清晰的问题意识，探索技术与真实需求之间的连接。</p></div>
+        <div class="interest-tags"><span><i class="tag-dot blue"></i>LLM Evaluation</span><span><i class="tag-dot green"></i>Trustworthy AI</span><span><i class="tag-dot ochre"></i>AI × FinTech</span></div>
+        <div class="intro-actions"><a class="button button-primary" href="#research"><span data-i18n="exploreResearch">探索我的研究</span><span>↓</span></a><a class="text-link" href="assets/yutong-zhang-cv.pdf" target="_blank" rel="noopener"><span data-i18n="downloadCV">查看简历</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg></a></div>
+        <div class="highlights"><div><strong>1<span>/86</span></strong><p data-i18n="rank">专业绩点排名</p></div><div><strong>ACL <span>2026</span></strong><p data-i18n="aclHighlight">主会录用 · 共同第一作者</p></div><div><strong>2<span> ×</span></strong><p data-i18n="scholarshipHighlight">本科生国家奖学金</p></div></div>
+      </section>
+
+      <section class="updates" aria-labelledby="updates-title"><div class="section-heading compact"><h2 id="updates-title"><span class="section-kicker">01</span><span data-i18n="updatesTitle">近期动态</span><span class="heading-english">Updates</span></h2><span class="small-label">2026</span></div><div id="news-list" class="news-list"></div></section>
+
+      <section class="research section-anchor" id="research" aria-labelledby="research-title">
+        <div class="section-heading"><h2 id="research-title"><span class="section-kicker">02</span><span data-i18n="researchTitle">研究与项目</span><span class="heading-english">Selected work</span></h2><span class="small-label" data-i18n="selectedNote">从问题出发，以研究回应</span></div>
+        <div class="filter-row"><div class="filters" role="group" aria-label="研究筛选"><button class="filter active" data-filter="all" aria-pressed="true" data-i18n="filterAll">全部</button><button class="filter" data-filter="llm" aria-pressed="false">Language Models</button><button class="filter" data-filter="finance" aria-pressed="false">AI × Finance</button></div><span class="work-count" id="work-count" aria-live="polite">04 WORKS</span></div>
+        <div id="works-list" class="works-list"></div>
+      </section>
+
+      <section class="education section-anchor" id="education" aria-labelledby="education-title"><div class="section-heading"><h2 id="education-title"><span class="section-kicker">03</span><span data-i18n="educationTitle">教育与经历</span><span class="heading-english">The journey</span></h2></div><div class="journey"><article class="journey-item"><span class="journey-mark">DUFE</span><div class="journey-content"><div class="journey-top"><h3 data-i18n="university">东北财经大学</h3><time data-i18n="educationDate">2024.09 — 至今</time></div><p class="journey-role" data-i18n="educationRole">金融科技 · 本科</p><p data-i18n="educationDescription">专业绩点排名 1/86；2025、2026 年度本科生国家奖学金获得者。</p><p class="coursework" data-i18n="coursework">相关课程：金融大数据挖掘、机器学习与金融应用、数学分析、概率论与数理统计、金融运筹学。</p></div></article><article class="journey-item"><span class="journey-mark pen-mark" aria-hidden="true">✎</span><div class="journey-content"><div class="journey-top"><h3 data-i18n="mediaTitle">媒体中心</h3><time data-i18n="educationDate">2024.09 — 至今</time></div><p class="journey-role" data-i18n="mediaRole">文编部部长</p><p data-i18n="mediaDescription">参与 300 余篇推文的审核、撰写与排版，内容涵盖学术会议、企业参访与校园活动。在研究之外，也练习把复杂内容表达清楚。</p></div></article></div></section>
+
+      <section class="awards section-anchor" id="awards" aria-labelledby="awards-title"><div class="section-heading"><h2 id="awards-title"><span class="section-kicker">04</span><span data-i18n="awardsTitle">荣誉与奖励</span><span class="heading-english">Milestones</span></h2><span class="small-label">2025 — 2026</span></div><div class="award-list" id="award-list"></div><button class="more-awards" id="more-awards" aria-expanded="false" aria-controls="award-list"><span data-i18n="moreAwards">展开全部荣誉</span><span class="expand-symbol">+</span></button></section>
+
+      <section class="skills" aria-labelledby="skills-title"><div class="section-heading"><h2 id="skills-title"><span class="section-kicker">05</span><span data-i18n="skillsTitle">工具与方法</span><span class="heading-english">In my toolkit</span></h2></div><div class="skill-groups"><div><h3 data-i18n="skillsData">编程与数据</h3><p>Python · pandas · NumPy<br>scikit-learn · MySQL</p></div><div><h3 data-i18n="skillsMethods">模型与研究</h3><p data-i18n="skillsMethodsBody">模型评测 · 数据分析<br>RAG · Agent · MCP</p></div><div><h3 data-i18n="skillsCommunication">表达与协作</h3><p data-i18n="skillsCommunicationBody">学术写作 · 内容编辑<br>英语 CET-6 562</p></div></div></section>
+
+      <section class="contact section-anchor" id="contact" aria-labelledby="contact-title"><span class="contact-spark" aria-hidden="true">✳</span><div><p class="eyebrow" data-i18n="contactEyebrow">LET’S CONNECT</p><h2 id="contact-title" data-i18n="contactTitle">下一个好问题，<br>也许从一次交流开始。</h2><p data-i18n="contactBody">欢迎就大模型评测、可信 AI 和金融科技交流想法。</p><div class="contact-actions"><a href="mailto:3074583963@qq.com" class="email-link">3074583963@qq.com <span>↗</span></a><button class="icon-button copy-email" id="copy-email" aria-label="复制邮箱"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg></button></div></div><span class="contact-orbit" aria-hidden="true"></span></section>
+
+      <footer class="footer"><span>© <span id="year">2026</span> Yutong Zhang</span><span data-i18n="footerNote">以好奇为起点，以真实为方向。</span><a href="#about" data-i18n="backTop">返回顶部 ↑</a></footer>
+    </main>
+  </div>
+  <dialog id="detail-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><span class="small-label" id="dialog-kind">RESEARCH NOTES</span><button class="icon-button" id="close-dialog" aria-label="关闭">×</button></div><h2 id="dialog-title"></h2><div id="dialog-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript-message">请启用 JavaScript 查看研究项目与荣誉列表。个人介绍、联系方式和简历下载仍可直接使用。</p></noscript>
 </body>
 </html>
