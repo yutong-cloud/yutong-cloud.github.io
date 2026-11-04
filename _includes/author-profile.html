@@ -34,7 +34,7 @@
       {% assign contact_emails = author.emails %}
       {% unless contact_emails %}{% assign contact_emails = author.email | split: ',' %}{% endunless %}
       {% for contact_email in contact_emails %}
-        <li class="author__email"><a href="mailto:{{ contact_email | escape }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i><span>{{ contact_email | escape }}</span></a></li>
+        <li class="author__email"><a href="mailto:{{ contact_email | escape }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i><span>{{ contact_email | escape | replace: '@', '@<wbr>' }}</span></a></li>
       {% endfor %}
       {% if author.twitter %}
         <li><a href="https://twitter.com/{{ author.twitter | escape }}"><i class="fab fa-fw fa-twitter icon-pad-right" aria-hidden="true"></i>Twitter</a></li>
