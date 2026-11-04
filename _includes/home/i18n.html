@@ -1,0 +1,4 @@
+{%- assign current_lang = page.lang | default: 'zh' -%}
+{%- assign ui = site.data.i18n[current_lang] -%}
+{%- assign home_data = site.data -%}
+{%- if current_lang == 'zh' -%}{%- assign home_data = site.data.zh -%}{%- endif -%}

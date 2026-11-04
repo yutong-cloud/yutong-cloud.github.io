@@ -1,0 +1,25 @@
+/* Language control; the original WowPage presentation stays in its own stylesheets. */
+.masthead__menu { display: flex; align-items: center; gap: 12px; }
+.masthead__menu .greedy-nav { flex: 1; min-width: 0; }
+.language-switch {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 5px 10px;
+  border: 1px solid #c5d4e3;
+  border-radius: 18px;
+  background: #f7f9fb;
+  color: #315d80;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.language-switch:hover { background: #eaf0f6; color: #244863; }
+.language-switch:focus-visible { outline: 2px solid #315d80; outline-offset: 3px; }
+html[lang="zh-CN"] .main-heading { font-family: "Permanent Marker", "KaiTi", "STKaiti", cursive; }
+@media (max-width: 480px) {
+  .masthead__menu { gap: 8px; }
+  .masthead__menu-item--lg { padding-right: .5em; }
+  .language-switch { padding-inline: 9px; }
+}

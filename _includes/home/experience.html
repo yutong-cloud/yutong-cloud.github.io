@@ -1,6 +1,6 @@
-<h2 id="experience">Experience</h2>
+<h2 id="experience">{{ ui.experience }}</h2>
 <div class="experience-container">
-  {% for item in site.data.experience %}
+  {% for item in home_data.experience %}
   <div class="experience-card">
     <img src="{{ item.logo | relative_url }}" alt="" class="experience-logo" width="60" height="60">
     <div class="experience-info">

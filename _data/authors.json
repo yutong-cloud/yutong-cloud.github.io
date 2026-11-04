@@ -1,0 +1,18 @@
+{
+  "zh": {
+    "name": "张语桐",
+    "avatar": "portrait.jpg",
+    "bio": "金融科技 · 本科生",
+    "location": "中国 · 大连",
+    "email": "3074583963@qq.com",
+    "github": "yutong-cloud"
+  },
+  "en": {
+    "name": "Yutong Zhang",
+    "avatar": "portrait.jpg",
+    "bio": "Undergraduate · Financial Technology",
+    "location": "Dalian, China",
+    "email": "3074583963@qq.com",
+    "github": "yutong-cloud"
+  }
+}

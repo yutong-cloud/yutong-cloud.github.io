@@ -37,7 +37,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: wowpage-preview
-          path: _site/
+          path: |
+            _site/
+            !_site/assets/*.pdf
+            !_site/assets/fonts/
+            !_site/assets/webfonts/
+            !_site/images/
           include-hidden-files: true
           retention-days: 7
       - name: Prepare GitHub Pages

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "prism",
+    "title": "PRISM: Probing Reasoning, Instruction, and Source Memory in LLM Hallucinations",
+    "title_url": "https://aclanthology.org/2026.acl-long.1551/",
+    "authors_html": "Yuhe Wu, Guangyu Wang, Yuran Chen, Jiatong Zhang, <strong>Yutong Zhang</strong>, Yujie Chen, Jiaming Shang, Guang Zhang, Zhuang Liu",
+    "venue": "ACL 2026 · 主会",
+    "featured": true,
+    "image": "/images/prism.png",
+    "image_alt": "PRISM 大语言模型幻觉诊断框架",
+    "description": "将幻觉评测转化为阶段感知的诊断问题：围绕记忆、指令与推理，构建覆盖 65 项任务、9,448 条实例的基准，并评测 24 个大语言模型。",
+    "links": [
+      {
+        "label": "论文",
+        "url": "https://aclanthology.org/2026.acl-long.1551/"
+      },
+      {
+        "label": "PDF",
+        "url": "/assets/prism.pdf"
+      },
+      {
+        "label": "代码",
+        "url": "https://github.com/Kzczc/ACL2026-PRISM"
+      }
+    ],
+    "year": 2026
+  },
+  {
+    "id": "narrative",
+    "title": "Caught in the Story: Narrative Captivity in Multi-turn LLMs Conversation",
+    "title_url": "https://arxiv.org/abs/2609.03407",
+    "authors_html": "Yuhe Wu, Guangyu Wang, Yujie Chen, Jiatong Zhang, Yuran Chen, <strong>Yutong Zhang</strong>, Xiyin Cheng, Wenpeng Cao, Zhuang Liu, Guang Zhang",
+    "venue": "EMNLP 2026 · Findings",
+    "featured": true,
+    "image": "/images/narrative.png",
+    "image_alt": "多轮大语言模型对话中的叙事俘获研究框架",
+    "description": "当单方面叙述逐步展开，模型能否保持独立判断？基于 6 个道德维度、5,078 个情境与 17 个模型，研究多轮对话中的“叙事俘获”现象。",
+    "links": [
+      {
+        "label": "论文",
+        "url": "https://arxiv.org/abs/2609.03407"
+      },
+      {
+        "label": "PDF",
+        "url": "/assets/narrative-captivity.pdf"
+      }
+    ],
+    "year": 2026
+  },
+  {
+    "id": "esg",
+    "title": "Bridging ESG Text Analysis and Global Value Chain Resilience Through AI-Driven Innovation",
+    "title_url": "",
+    "authors_html": "Zhuang Liu, Yuhe Wu, Donghang Zheng, Yuran Chen, Shanshan Li, <strong>Yutong Zhang</strong>, Yueyao Ma",
+    "venue": "会议展示",
+    "featured": true,
+    "image": "/images/esg.png",
+    "image_alt": "ESG 文本分析与全球价值链韧性研究框架",
+    "description": "连接 ESG 信息披露文本与全球价值链韧性：通过非结构化数据清洗、特征提取和向量化分析，辅助企业风险识别与韧性评估。",
+    "links": [
+      {
+        "label": "PDF 附件",
+        "url": "/assets/esg-value-chain-resilience.pdf"
+      }
+    ]
+  }
+]

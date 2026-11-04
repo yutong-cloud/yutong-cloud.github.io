@@ -1,23 +1,22 @@
 {% include base_path %}
+{% include home/i18n.html %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <button type="button" aria-label="{{ ui.menu }}"><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ ui.home | relative_url }}">{{ ui.name }}</a></li>
           {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-              {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% assign section_id = link.url | split: '#' | last %}
+            {% assign section_url = ui.home | append: '#' | append: section_id %}
+            <li class="masthead__menu-item"><a href="{{ section_url | relative_url }}">{{ ui[section_id] | default: link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
+      <a class="language-switch" href="{{ ui.other_home | relative_url }}" lang="{{ ui.other_lang }}" hreflang="{{ ui.other_lang }}" aria-label="{{ ui.switch_title }}" data-language-switch>{{ ui.switch_label }}</a>
     </div>
   </div>
 </div>

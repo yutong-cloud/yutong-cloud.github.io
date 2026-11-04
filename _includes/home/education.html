@@ -1,6 +1,6 @@
-<h2 id="education">Education</h2>
+<h2 id="education">{{ ui.education }}</h2>
 <div class="education-container">
-  {% for item in site.data.education %}
+  {% for item in home_data.education %}
   <div class="experience-card">
     <img src="{{ item.logo | relative_url }}" alt="" class="experience-logo" width="60" height="60">
     <div class="experience-info">

@@ -1,0 +1,16 @@
+{
+  "zh": {
+    "locale": "zh-CN", "name": "张语桐", "home": "/", "other_home": "/en/", "other_lang": "en", "switch_label": "English", "switch_title": "Switch to English",
+    "greeting": "你好", "welcome": "欢迎来到我的主页！", "interests": "研究兴趣",
+    "news": "近期动态", "education": "教育背景", "experience": "研究经历", "publications": "学术论文", "projects": "项目经历", "blog": "博客", "awards": "荣誉奖励", "talks": "学术报告", "services": "校园与服务",
+    "core": "代表论文", "full": "完整论文列表", "publication_view": "论文展示方式", "legend": "* 共同第一作者 · &dagger; 通讯作者 · &Dagger; 项目负责人", "project_link": "项目",
+    "follow": "联系方式", "email": "邮箱", "website": "个人网站", "sitemap": "网站地图", "footer_follow": "关注：", "feed": "订阅", "powered": "由", "template": "模板", "menu": "展开导航"
+  },
+  "en": {
+    "locale": "en-US", "name": "Yutong Zhang", "home": "/en/", "other_home": "/", "other_lang": "zh-CN", "switch_label": "中文", "switch_title": "切换到中文",
+    "greeting": "Hi there", "welcome": "Welcome to my Homepage!", "interests": "Research interests",
+    "news": "News", "education": "Education", "experience": "Experience", "publications": "Publications", "projects": "Projects", "blog": "Blog", "awards": "Awards", "talks": "Talks", "services": "Services",
+    "core": "Core Publications", "full": "Full Publications List", "publication_view": "Publication view", "legend": "* Equal contribution · &dagger; Corresponding author · &Dagger; Project leader", "project_link": "Project",
+    "follow": "Follow", "email": "Email", "website": "Website", "sitemap": "Sitemap", "footer_follow": "Follow:", "feed": "Feed", "powered": "Powered by", "template": "Template", "menu": "Toggle navigation"
+  }
+}
