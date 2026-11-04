@@ -1,7 +1,7 @@
 {
   "zh": {
     "locale": "zh-CN", "name": "张语桐", "home": "/", "other_home": "/en/", "other_lang": "en", "switch_label": "English", "switch_title": "Switch to English",
-    "greeting": "你好", "welcome": "欢迎来到我的主页！", "interests": "研究兴趣",
+    "greeting": "Hi there", "welcome": "Welcome to my Homepage!", "interests": "研究兴趣",
     "news": "近期动态", "education": "教育背景", "experience": "研究经历", "publications": "学术论文", "projects": "项目经历", "blog": "博客", "awards": "荣誉奖励", "talks": "学术报告", "services": "校园与服务",
     "core": "代表论文", "full": "完整论文列表", "publication_view": "论文展示方式", "legend": "* 同等贡献 · &dagger; 通讯作者 · &Dagger; 项目负责人", "project_link": "项目",
     "follow": "联系方式", "email": "邮箱", "website": "个人网站", "sitemap": "网站地图", "sitemap_url": "/sitemap/", "footer_follow": "关注：", "feed": "订阅", "powered": "由", "template": "模板", "menu": "展开导航"
