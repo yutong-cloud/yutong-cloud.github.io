@@ -1,20 +1,9 @@
-# macOS
+_site/
+.bundle/
+.jekyll-cache/
+.sass-cache/
+Gemfile.lock
+node_modules/
+local/
+vendor/
 .DS_Store
-
-# Windows
-Thumbs.db
-
-# phpMyAdmin
-irb-x/
-irb-x@
-irb-x*
-
-# Piwic
-analytics/
-analytics@
-analytics*
-
-# Let's Encrypt
-.well-known/
-.well-known@
-.well-known*

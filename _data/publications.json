@@ -1,0 +1,67 @@
+[
+  {
+    "id": "prism",
+    "title": "PRISM: Probing Reasoning, Instruction, and Source Memory in LLM Hallucinations",
+    "title_url": "https://aclanthology.org/2026.acl-long.1551/",
+    "authors_html": "Yuhe Wu, Guangyu Wang, Yuran Chen, Jiatong Zhang, <strong>Yutong Zhang</strong>, Yujie Chen, Jiaming Shang, Guang Zhang, Zhuang Liu",
+    "venue": "ACL 2026 · Main",
+    "featured": true,
+    "image": "/images/prism.png",
+    "image_alt": "Overview of the PRISM hallucination diagnosis framework",
+    "description": "A stage-aware benchmark for diagnosing hallucinations across memory, instruction, and reasoning: 65 tasks, 9,448 instances, and 24 evaluated LLMs.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://aclanthology.org/2026.acl-long.1551/"
+      },
+      {
+        "label": "PDF",
+        "url": "/assets/prism.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Kzczc/ACL2026-PRISM"
+      }
+    ],
+    "year": 2026
+  },
+  {
+    "id": "narrative",
+    "title": "Caught in the Story: Narrative Captivity in Multi-turn LLMs Conversation",
+    "title_url": "https://arxiv.org/abs/2609.03407",
+    "authors_html": "Yuhe Wu, Guangyu Wang, Yujie Chen, Jiatong Zhang, Yuran Chen, <strong>Yutong Zhang</strong>, Xiyin Cheng, Wenpeng Cao, Zhuang Liu, Guang Zhang",
+    "venue": "EMNLP 2026 · Findings",
+    "featured": true,
+    "image": "/images/narrative.png",
+    "image_alt": "Overview of narrative captivity in multi-turn LLM conversations",
+    "description": "Can models preserve independent judgment as one-sided stories unfold? Studying narrative captivity across 5,078 scenarios, six moral dimensions, and 17 LLMs.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/abs/2609.03407"
+      },
+      {
+        "label": "PDF",
+        "url": "/assets/narrative-captivity.pdf"
+      }
+    ],
+    "year": 2026
+  },
+  {
+    "id": "esg",
+    "title": "Bridging ESG Text Analysis and Global Value Chain Resilience Through AI-Driven Innovation",
+    "title_url": "",
+    "authors_html": "Co-first author: <strong>Yutong Zhang</strong>",
+    "venue": "Conference presentation",
+    "featured": true,
+    "image": "/images/esg.png",
+    "image_alt": "Research framework for ESG text analysis and global value chain resilience",
+    "description": "Connecting ESG disclosures with global value chain resilience through unstructured data cleaning, feature extraction, and vector-based analysis.",
+    "links": [
+      {
+        "label": "PDF Attachment",
+        "url": "/assets/esg-value-chain-resilience.pdf"
+      }
+    ]
+  }
+]

@@ -1,0 +1,96 @@
+# Personal identity. Empty social fields are hidden.
+locale: en-US
+title: Yutong Zhang
+title_separator: "·"
+name: &name "Yutong Zhang"
+description: "Research, publications, and projects by Yutong Zhang, an undergraduate in Financial Technology at Dongbei University of Finance and Economics."
+url: "https://yutong-cloud.github.io"
+baseurl: ""
+repository: "yutong-cloud/yutong-cloud.github.io"
+author:
+  name: *name
+  avatar: portrait.jpg
+  bio: "Undergraduate · Financial Technology"
+  location: "Dalian, China"
+  email: "3074583963@qq.com"
+  uri:
+  pronouns:
+  twitter:
+  googlescholar:
+  github: "yutong-cloud"
+  orcid:
+  linkedin:
+  WeChat:
+
+# Rendering and defaults. Content lives in _data/ and _posts/.
+timezone: Etc/UTC
+future: false
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  toc_levels: 1..6
+  syntax_highlighter: rouge
+excerpt_separator: "<!--more-->"
+permalink: /blog/:year/:month/:day/:title/
+words_per_minute: 160
+breadcrumbs: false
+read_more: disabled
+comments:
+  provider: false
+analytics:
+  provider: false
+atom_feed:
+  hide: false
+include:
+  - _pages
+exclude:
+  - .github
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - README.zh-CN.md
+  - CHANGELOG.md
+  - docs
+  - scripts
+  - node_modules
+  - package.json
+  - package-lock.json
+  - local
+  - vendor
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: academic-post
+      author_profile: false
+      comments: false
+      share: false
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
