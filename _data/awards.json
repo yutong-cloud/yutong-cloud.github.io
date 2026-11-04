@@ -2,51 +2,61 @@
   {
     "title": "National Scholarship",
     "date": "2026.10",
-    "details": "National · Awarded in both 2025 and 2026"
+    "details": "National · Awarded in both 2025 and 2026",
+    "icon": "scholarship"
   },
   {
     "title": "National E-Commerce Innovation Challenge",
     "date": "2026.08",
-    "details": "2nd Prize · Project lead"
+    "details": "2nd Prize · Project lead",
+    "icon": "silver"
   },
   {
     "title": "Mathematical Contest in Modeling (MCM/ICM)",
     "date": "2026.05",
-    "details": "Meritorious"
+    "details": "Meritorious",
+    "icon": "silver"
   },
   {
     "title": "National English Competition for College Students",
     "date": "2026.04",
-    "details": "3rd Prize"
+    "details": "3rd Prize",
+    "icon": "bronze"
   },
   {
     "title": "Undergraduate Innovation & Entrepreneurship Program",
     "date": "2026.04",
-    "details": "National"
+    "details": "National",
+    "icon": "innovation"
   },
   {
     "title": "Chinese Mathematics Competitions",
     "date": "2025.12",
-    "details": "1st Prize"
+    "details": "1st Prize",
+    "icon": "gold"
   },
   {
     "title": "ICBC Cup FinTech Innovation Competition",
     "date": "2025.12",
-    "details": "Prov. 1st"
+    "details": "Prov. 1st",
+    "icon": "gold"
   },
   {
     "title": "National Finance Universities Innovation League",
     "date": "2025.11",
-    "details": "2nd Prize · Project lead"
+    "details": "2nd Prize · Project lead",
+    "icon": "silver"
   },
   {
     "title": "National Scholarship",
     "date": "2025.10",
-    "details": "National"
+    "details": "National",
+    "icon": "scholarship"
   },
   {
     "title": "China Undergraduate Mathematical Contest in Modeling",
     "date": "2025.10",
-    "details": "Prov. 1st"
+    "details": "Prov. 1st",
+    "icon": "gold"
   }
 ]

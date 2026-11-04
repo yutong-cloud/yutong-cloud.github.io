@@ -8,17 +8,20 @@
 <div itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar">
+    <span class="author__portrait">
     {% if author.avatar contains "://" %}
       <img src="{{ author.avatar | escape }}" alt="{{ author.name | escape }}">
     {% else %}
       <img src="{{ author.avatar | remove_first: '/images/' | prepend: '/images/' | relative_url }}" class="author__avatar" alt="{{ author.name | escape }}">
     {% endif %}
+    <img src="{{ '/images/avatar-badge.png' | relative_url }}" class="author__badge" alt="" aria-hidden="true" width="1366" height="1151">
+    </span>
   </div>
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name | escape }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% if author.signature %}<p class="author__bio author__signature">{{ author.signature | escape }}</p>{% elsif author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
