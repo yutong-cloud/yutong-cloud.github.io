@@ -4,15 +4,23 @@
     "avatar": "portrait.jpg",
     "bio": "金融科技 · 本科生",
     "location": "中国 · 大连",
-    "email": "3074583963@qq.com",
-    "github": "yutong-cloud"
+    "email": "zhangyutong@stumail.dufe.edu.cn",
+    "github": "yutong-cloud",
+    "emails": [
+      "zhangyutong@stumail.dufe.edu.cn",
+      "zzyytt54@gmail.com"
+    ]
   },
   "en": {
     "name": "Yutong Zhang",
     "avatar": "portrait.jpg",
     "bio": "Undergraduate · Financial Technology",
     "location": "Dalian, China",
-    "email": "3074583963@qq.com",
-    "github": "yutong-cloud"
+    "email": "zhangyutong@stumail.dufe.edu.cn",
+    "github": "yutong-cloud",
+    "emails": [
+      "zhangyutong@stumail.dufe.edu.cn",
+      "zzyytt54@gmail.com"
+    ]
   }
 }

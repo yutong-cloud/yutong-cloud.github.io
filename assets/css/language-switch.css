@@ -17,6 +17,9 @@
 }
 .language-switch:hover { background: #eaf0f6; color: #244863; }
 .language-switch:focus-visible { outline: 2px solid #315d80; outline-offset: 3px; }
+.author__urls .author__email a { display: flex; align-items: flex-start; white-space: normal; }
+.author__email i { flex: none; }
+.author__email span { min-width: 0; overflow-wrap: anywhere; }
 @media (max-width: 480px) {
   .masthead__menu { gap: 8px; }
   .masthead__menu-item--lg { padding-right: .5em; }
