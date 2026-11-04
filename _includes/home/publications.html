@@ -3,7 +3,6 @@
   <button class="pub-button active" type="button" data-publication-target="core" aria-pressed="true" aria-controls="core-publications">{{ ui.core }}</button>
   <button class="pub-button" type="button" data-publication-target="list" aria-pressed="false" aria-controls="full-publications">{{ ui.full }}</button>
 </div>
-<p class="publication-legend">{{ ui.legend }}</p>
 <div id="core-publications" class="publication-view" data-publication-view="core">
   {% assign featured_publications = home_data.publications | where: 'featured', true %}
   {% for publication in featured_publications %}
