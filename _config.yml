@@ -1,8 +1,8 @@
 # Personal identity. Empty social fields are hidden.
-locale: zh-CN
-title: 张语桐
+locale: en-US
+title: Yutong Zhang
 title_separator: "·"
-name: &name "张语桐"
+name: &name "Yutong Zhang"
 description: "Research, publications, and projects by Yutong Zhang, an undergraduate in Financial Technology at Dongbei University of Finance and Economics."
 url: "https://yutong-cloud.github.io"
 baseurl: ""

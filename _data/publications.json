@@ -53,6 +53,7 @@
     "title_url": "",
     "authors_html": "Zhuang Liu, Yuhe Wu, Donghang Zheng, Yuran Chen, Shanshan Li, <strong>Yutong Zhang</strong>, Yueyao Ma",
     "venue": "Inaugural Frontier Symposium on an Independent Knowledge System for Digital Finance in China · Conference presentation",
+    "long_venue": true,
     "featured": true,
     "image": "/images/esg.png",
     "image_alt": "Research framework for ESG text analysis and global value chain resilience",

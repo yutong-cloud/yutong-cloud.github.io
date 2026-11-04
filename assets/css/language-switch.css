@@ -19,6 +19,8 @@
 .language-switch:focus-visible { outline: 2px solid #315d80; outline-offset: 3px; }
 .author__urls .author__email a { align-items: start; white-space: normal; }
 .author__email span { min-width: 0; overflow-wrap: anywhere; }
+.full-publication-list .pub-list-row.pub-list-row--long-venue { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+.pub-list-row--long-venue .pub-list-venue { overflow-wrap: anywhere; }
 @media (max-width: 924px) {
   .sidebar { position: relative; }
   .author__urls-wrapper { position: static; }

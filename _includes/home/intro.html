@@ -2,7 +2,8 @@
   <span class="greeting-lead"><span>{{ ui.greeting }}</span><img class="intro-wave" src="{{ '/images/Hi.gif' | relative_url }}" width="32" height="32" alt=""></span>
   <span class="greeting-message">{{ ui.welcome }}</span>
 </h1>
-{{ home_data.profile.intro_html }}
+{% assign cv_url = '/assets/yutong-zhang-cv.pdf' | relative_url %}
+{{ home_data.profile.intro_html | replace: '/assets/yutong-zhang-cv.pdf', cv_url }}
 {% if home_data.profile.interests.size > 0 %}
 <div class="research-interests" role="group" aria-labelledby="research-interests-label">
   <span class="research-caption" id="research-interests-label">{{ ui.interests }}</span>

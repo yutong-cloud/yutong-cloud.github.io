@@ -1,5 +1,7 @@
 ---
 permalink: /en/
+canonical_url: /
+sitemap: false
 layout: single
 homepage_palette: classic-blue
 author_profile: true

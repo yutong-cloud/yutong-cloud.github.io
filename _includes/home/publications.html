@@ -12,7 +12,7 @@
 <div id="full-publications" class="publication-view" data-publication-view="list">
   <ul class="full-publication-list" role="list">
     {% for publication in home_data.publications %}
-    <li class="pub-list-row">
+    <li class="pub-list-row{% if publication.long_venue %} pub-list-row--long-venue{% endif %}">
       <span class="pub-list-venue">{{ publication.venue | escape }}</span>
       <div class="pub-list-details">
         {% if publication.title_url and publication.title_url != '' %}<a class="pub-list-title" href="{{ publication.title_url | relative_url }}">{{ publication.title | escape }}</a>{% else %}<span class="pub-list-title">{{ publication.title | escape }}</span>{% endif %}
