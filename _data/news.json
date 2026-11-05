@@ -5,10 +5,38 @@
   },
   {
     "date": "2026.09",
-    "text": "Our work on narrative captivity, <a href=\"https://arxiv.org/abs/2609.03407\" target=\"_blank\" rel=\"noopener noreferrer\">Caught in the Story</a>, is available on arXiv."
+    "text": "<a href=\"https://arxiv.org/abs/2609.03407\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Caught in the Story</strong></a>, our work on narrative captivity in multi-turn LLM conversations, was accepted to <strong>Findings of EMNLP 2026</strong>. The preprint is now available."
   },
   {
     "date": "2026.08",
-    "text": "Led the “Yu-e-Cha” banking intelligence project to a <strong>National Second Prize</strong> in the E-Commerce Innovation Challenge."
+    "text": "Led <strong>“Yu-e-Cha”</strong> to a <strong>National Second Prize</strong> in the National E-Commerce Innovation Challenge."
+  },
+  {
+    "date": "2026.07",
+    "text": "<a href=\"https://aclanthology.org/2026.acl-long.1551/\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>PRISM</strong></a>, our diagnostic benchmark for LLM hallucinations, was accepted to the <strong>ACL 2026 Main Conference</strong>."
+  },
+  {
+    "date": "2026.05",
+    "text": "Received <strong>Meritorious Winner</strong> in the <strong>Mathematical Contest in Modeling (MCM/ICM)</strong>."
+  },
+  {
+    "date": "2026.04",
+    "text": "My undergraduate innovation project was selected for the <strong>National Undergraduate Innovation and Entrepreneurship Training Program</strong>."
+  },
+  {
+    "date": "2025.12",
+    "text": "Won <strong>First Prize</strong> in the <strong>Chinese Mathematics Competitions</strong>."
+  },
+  {
+    "date": "2025.12",
+    "text": "Won <strong>Provincial First Prize</strong> in the <strong>ICBC Cup FinTech Innovation Competition</strong>."
+  },
+  {
+    "date": "2025.11",
+    "text": "Received <strong>National Second Prize</strong> as project lead in the National Finance Universities Innovation League."
+  },
+  {
+    "date": "2025.10",
+    "text": "Won <strong>Provincial First Prize</strong> in the <strong>China Undergraduate Mathematical Contest in Modeling</strong>."
   }
 ]
