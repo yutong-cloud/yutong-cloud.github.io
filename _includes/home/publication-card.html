@@ -9,7 +9,7 @@
     <div class="card-description">
       <strong>{% if publication.title_url and publication.title_url != '' %}<a href="{{ publication.title_url | relative_url }}">{{ publication.title | escape }}</a>{% else %}{{ publication.title | escape }}{% endif %}</strong>
       <p>{{ publication.description | escape }}</p>
-      <span class="publication-venue">{{ publication.venue | escape }}</span>
+      {% if publication.venue and publication.venue != '' %}<span class="publication-venue">{{ publication.venue | escape }}</span>{% endif %}
       {% for link in publication.links %}<a href="{{ link.url | relative_url }}">[{{ link.label | escape }}]</a> {% endfor %}
     </div>
   </div>

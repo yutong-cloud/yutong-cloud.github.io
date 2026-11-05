@@ -64,5 +64,18 @@
         "url": "/assets/esg-value-chain-resilience.pdf"
       }
     ]
+  },
+  {
+    "id": "cognitive-boundary",
+    "title": "The Cognitive Boundary: When Do Large Language Models Fail as Rational Economic Agents?",
+    "title_url": "",
+    "authors_html": "",
+    "venue": "",
+    "unpublished": true,
+    "featured": true,
+    "image": "/images/cognitive-boundary.png",
+    "image_alt": "SiPC framework evaluating economic consistency across synthetic personas and increasingly complex decision tasks",
+    "description": "SiPC evaluates the economic consistency of LLM agents using revealed preference theory. Across 576 synthetic personas and risk, time, and social decision tasks, it examines where increasing structural complexity undermines rational choices and how explicit reasoning trades greater consistency for additional computational cost.",
+    "links": []
   }
 ]

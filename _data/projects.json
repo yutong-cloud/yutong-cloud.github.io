@@ -2,7 +2,7 @@
   {
     "title": "Yu-e-Cha: A Banking Intelligence & Briefing Assistant",
     "url": "",
-    "image": "",
+    "image": "/images/yuecha-dashboard.png",
     "description": "Project lead. A banking intelligence workflow combining MCP, RAG, and agents to connect multi-source collection, risk identification, analysis, and briefing generation. National Second Prize in the E-Commerce Innovation Challenge."
   }
 ]

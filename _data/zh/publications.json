@@ -64,5 +64,18 @@
         "url": "/assets/esg-value-chain-resilience.pdf"
       }
     ]
+  },
+  {
+    "id": "cognitive-boundary",
+    "title": "The Cognitive Boundary: When Do Large Language Models Fail as Rational Economic Agents?",
+    "title_url": "",
+    "authors_html": "",
+    "venue": "",
+    "unpublished": true,
+    "featured": true,
+    "image": "/images/cognitive-boundary.png",
+    "image_alt": "SiPC 经济决策一致性评测框架：合成角色与不同复杂度的决策任务",
+    "description": "基于显示偏好理论构建 SiPC 框架，评测 576 个合成角色在风险、时间和社会决策中的一致性，探索复杂任务下的认知边界，以及显式推理在决策稳定性与计算成本之间的权衡。",
+    "links": []
   }
 ]

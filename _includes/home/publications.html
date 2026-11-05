@@ -16,8 +16,8 @@
       <span class="pub-list-venue">{{ publication.venue | escape }}</span>
       <div class="pub-list-details">
         {% if publication.title_url and publication.title_url != '' %}<a class="pub-list-title" href="{{ publication.title_url | relative_url }}">{{ publication.title | escape }}</a>{% else %}<span class="pub-list-title">{{ publication.title | escape }}</span>{% endif %}
-        <span class="pub-list-authors">{{ publication.authors_html }}</span>
-        <span class="pub-list-links">{% for link in publication.links %}<a href="{{ link.url | relative_url }}">[{{ link.label | escape }}]</a>{% endfor %}</span>
+        {% if publication.authors_html and publication.authors_html != '' %}<span class="pub-list-authors">{{ publication.authors_html }}</span>{% endif %}
+        {% if publication.links.size > 0 %}<span class="pub-list-links">{% for link in publication.links %}<a href="{{ link.url | relative_url }}">[{{ link.label | escape }}]</a>{% endfor %}</span>{% endif %}
       </div>
     </li>
     {% endfor %}
