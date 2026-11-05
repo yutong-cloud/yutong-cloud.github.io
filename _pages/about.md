@@ -2,6 +2,7 @@
 permalink: /
 layout: single
 homepage_palette: classic-blue
+home_entrance: true
 author_profile: true
 author: en
 lang: en

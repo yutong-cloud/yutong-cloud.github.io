@@ -14,6 +14,8 @@ layout: compress
 
   <body>
 
+    {% if page.home_entrance %}{% include home/entrance.html %}{% endif %}
+
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 

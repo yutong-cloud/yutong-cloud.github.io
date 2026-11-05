@@ -1,0 +1,21 @@
+<dialog id="home-entrance" class="home-entrance" aria-labelledby="entrance-title" aria-describedby="entrance-hint">
+  <nav class="home-entrance__nav" aria-label="Explore the homepage">
+    <a href="#publications" data-entrance-target>Research</a>
+    <a href="#blog" data-entrance-target>Blog</a>
+    <a href="#main" data-entrance-target>About</a>
+  </nav>
+  <div class="home-entrance__scene">
+    <div class="home-entrance__intro">
+      <p class="home-entrance__hello">Hi,</p>
+      <h1 id="entrance-title">This is Yutong Zhang’s Homepage.</h1>
+      <p id="entrance-hint" class="home-entrance__hint">Click the tree. Let it snow.</p>
+      <a class="home-entrance__skip" href="#main">Enter directly <span aria-hidden="true">↗</span></a>
+    </div>
+    <button class="home-entrance__tree" type="button" aria-label="Shake the tree, let it snow, and enter Yutong Zhang’s homepage" autofocus>
+      <img class="home-entrance__tree-image" src="{{ '/images/entrance-tree.png' | relative_url }}" width="1024" height="1536" alt="A bare winter tree, drawn in pencil" decoding="async" fetchpriority="high">
+      <span class="home-entrance__tree-caption" aria-hidden="true">touch a little winter</span>
+    </button>
+  </div>
+  <canvas class="home-entrance__snow" aria-hidden="true"></canvas>
+  <p id="home-entrance-status" class="home-entrance__status" role="status" aria-live="polite"></p>
+</dialog>

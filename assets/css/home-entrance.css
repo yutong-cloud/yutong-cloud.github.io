@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Special Elite";
+  src: url("../fonts/special-elite/special-elite.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* An isolated sketchbook entrance; the academic homepage keeps its own theme. */
+html.entrance-pending::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: #f7f7f5;
+  z-index: 2147483646;
+  pointer-events: none;
+}
+body.entrance-is-open { overflow: hidden; }
+.home-entrance:not([open]) { display: none; }
+.home-entrance {
+  --entrance-ink: #4b4b49;
+  position: fixed;
+  inset: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  height: 100vh;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+  color: var(--entrance-ink);
+  background: #f7f7f5;
+  font-family: "Special Elite", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 1;
+  transition: opacity 400ms ease;
+  color-scheme: light;
+}
+.home-entrance::backdrop { background: #f7f7f5; }
+.home-entrance.is-leaving { opacity: 0; }
+.home-entrance a { color: #686963; text-decoration: none; }
+.home-entrance a:hover { color: #242422; text-decoration: underline; text-underline-offset: 6px; }
+.home-entrance :focus-visible { outline: 1px dashed #777; outline-offset: 7px; }
+.home-entrance:not(.has-keyboard-focus) .home-entrance__tree:focus { outline: none; }
+.entrance-focus-target:focus { outline: none; }
+.home-entrance__nav {
+  position: absolute;
+  top: max(27px, env(safe-area-inset-top));
+  left: max(36px, env(safe-area-inset-left));
+  right: max(36px, env(safe-area-inset-right));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: .025em;
+}
+.home-entrance__scene { position: relative; width: 100%; height: 100%; max-width: 1680px; margin: 0 auto; }
+.home-entrance__intro { position: absolute; left: 6%; top: 32%; width: 49%; z-index: 2; }
+.home-entrance__hello { margin: 0 0 15px; font-size: clamp(19px, 1.6vw, 25px); }
+.home-entrance h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  font-size: clamp(18px, 1.65vw, 26px);
+  line-height: 1.6;
+  font-weight: 400;
+  text-wrap: balance;
+}
+.home-entrance__hint { margin: 38px 0 16px; color: #6e6f69; font-size: 14px; }
+.home-entrance__skip { display: inline-block; padding: 7px 0; font-family: Arial, sans-serif; font-size: 12px; letter-spacing: .02em; }
+.home-entrance__skip span { padding-left: 5px; }
+.home-entrance__tree {
+  position: absolute;
+  right: 5%;
+  bottom: 4%;
+  width: 43%;
+  height: 83%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  background: transparent;
+  box-shadow: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  z-index: 1;
+}
+.home-entrance__tree:hover, .home-entrance__tree:active { background: transparent; box-shadow: none; }
+.home-entrance__tree-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  object-fit: contain;
+  object-position: center bottom;
+  transform-origin: 50% 97%;
+  filter: grayscale(1) contrast(1.25);
+  user-select: none;
+  -webkit-user-drag: none;
+  will-change: transform;
+}
+.home-entrance__tree-caption {
+  position: absolute;
+  right: 0;
+  top: 48%;
+  color: #8d8e88;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: .13em;
+  writing-mode: vertical-rl;
+  pointer-events: none;
+}
+.home-entrance.is-shaking .home-entrance__tree-image { animation: entrance-tree-sway 2600ms ease-in-out both; }
+.home-entrance.is-shaking .home-entrance__tree-caption { opacity: 0; transition: opacity 250ms; }
+@keyframes entrance-tree-sway {
+  0%, 100% { transform: rotate(0deg) skewX(0deg); }
+  12% { transform: rotate(-1.4deg) skewX(-.8deg); }
+  27% { transform: rotate(1.6deg) skewX(.9deg); }
+  43% { transform: rotate(-1.1deg) skewX(-.7deg); }
+  59% { transform: rotate(.85deg) skewX(.5deg); }
+  76% { transform: rotate(-.45deg) skewX(-.3deg); }
+  90% { transform: rotate(.2deg) skewX(.15deg); }
+}
+.home-entrance__snow { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; }
+.home-entrance__status { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 700px) and (orientation: portrait) {
+  .home-entrance__nav { top: max(23px, env(safe-area-inset-top)); left: 24px; right: 24px; font-size: 12px; }
+  .home-entrance__intro { left: 8%; top: 15%; width: 84%; }
+  .home-entrance__hello { margin-bottom: 9px; font-size: 19px; }
+  .home-entrance h1 { max-width: 280px; font-size: 19px; line-height: 1.6; }
+  .home-entrance__hint { margin: 16px 0 0; font-size: 12px; }
+  .home-entrance__skip { font-size: 11px; }
+  .home-entrance__tree { right: 7%; bottom: 2.5%; width: 79%; height: 58%; }
+  .home-entrance__tree-caption { right: -3%; top: 58%; font-size: 9px; }
+}
+@media (max-height: 540px) and (orientation: landscape) {
+  .home-entrance__nav { top: 16px; left: 24px; right: 24px; font-size: 12px; }
+  .home-entrance__intro { top: 30%; }
+  .home-entrance__hello { margin-bottom: 8px; font-size: 18px; }
+  .home-entrance h1 { font-size: 18px; }
+  .home-entrance__hint { margin: 20px 0 4px; font-size: 12px; }
+  .home-entrance__tree { right: 5%; height: 82%; width: 40%; bottom: 3%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-entrance, .home-entrance__tree-caption { transition: none !important; }
+  .home-entrance__tree-image { animation: none !important; }
+}
